@@ -59,7 +59,7 @@ const MapContainer = () => {
 
     const { isLoaded } = useJsApiLoader({
         id: 'google map',
-        googleMapsApiKey: 'AIzaSyCSv-yDRBj8qi92-Vo-9COPmwF3PlJOFJ8',
+        googleMapsApiKey: process.env.GOOGLE_MAPS_API_KEY || '',
     });
 
     // const handleScriptLoaded = (updateQuery: any, autoCompleteRef: any) => {
